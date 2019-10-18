@@ -1,6 +1,6 @@
 ## Week 01 Lab Report
 
-First time coder.
+#### First time coder.
 
 ### Homework 01 - Test
 
@@ -39,7 +39,7 @@ digitalWrite(5,LOW);
 
 
 ###### VedioLink 
-https://youtu.be/XKyXdch1t18
+https://www.youtube.com/watch?v=jNgGUzitOLs
 
 
 ### Homework 02 - Improvement
