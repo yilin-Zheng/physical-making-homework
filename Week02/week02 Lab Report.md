@@ -3,9 +3,9 @@
 
 ### Lab 00 - Leds in Serial and Parallel
 
-Experiment results: Max 2 White LEDs in serial and max ___ in parallel.
+Experiment results: Maximum 2 White LEDs in serial and more than 24 in parallel.
 
-This lab experiment discuss about the load of a circuit. My computer output is 5V,4.5W and a battery is 1.5V, max.2.4W. I learn to always keep in mind the voltage and maximum power of a power source of a device.
+This lab experiment discuss about the load of a circuit. My computer output is 5V,4.5W and a battery is 1.5V, max.2.4W. I learned to always keep in mind the voltage and maximum power of a power source of a device.
 
 ![image](IMG_7284.JPG)
 *Two LEDs on in serial.*
@@ -20,8 +20,9 @@ This lab experiment discuss about the load of a circuit. My computer output is 5
 ### Lab 01 - Serial Data
 ###### A little Wee Story
 void setup() {
-  // put your setup code here, to run once:
+
    Serial.begin(9600); 
+
    Serial.println("Tell me what you think");
   
 }
@@ -29,13 +30,17 @@ void setup() {
 void loop() {
   
  if(Serial.available()) 
+
  { int a = random(0,3);
+
    String message[ ] = {"hello  ", "thanks  ", "haha  "};
-   
+  
    Serial.print(message[a]); 
-   //this will read serial data 
-    String s = Serial.readString(); 
+
+  String s = Serial.readString(); 
+
    Serial.println(s); 
+
  }
 
 ### Lab 02- Potentiometers (Knobs)
@@ -54,4 +59,4 @@ The temperature sensor detects tempterature and act as a votage divider, the out
 
 The temperature sensor is connected to 5V and 3.3V respectively. 5V is the default voltage and I learned to set external reference voltage of 3.3V in codes. 
 
-Issues I faced include the abnormal heating of the sensor. This issue occurs twice and was solved after reconnecting the same circuit. I need to be prepared to disconnect next time I use this TMP36 sensors.
+Issues I faced include the abnormal heating of the sensor. This issue occurs twice and was solved after reconnecting the same circuit. I need to be prepared to disconnect immediately the next time I use this TMP36 sensors.
