@@ -56,7 +56,7 @@ digitalWrite(5,LOW);
 }
 
 
-###### VedioLink 
+###### VideoLink 
 https://www.youtube.com/watch?v=jNgGUzitOLs
 
 
@@ -203,7 +203,7 @@ return 0;
  
 }
 
-###### VedioLink 
+###### VideoLink 
 https://www.youtube.com/watch?v=Y7KDHggAGRM
 
 ### Homework 03 - Game
@@ -352,5 +352,5 @@ void loop(){
 
 
 
-###### VedioLink 
+###### VideoLink 
 https://www.youtube.com/watch?v=cVFAY7nHZUY
