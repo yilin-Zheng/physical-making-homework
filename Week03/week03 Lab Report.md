@@ -9,7 +9,7 @@ I paired with Stuart and we did the lab experiment together.
 ![Image02](Week03Lab01.2.JPG)
 ![Image03](Week03Lab01.3.JPG)
 
-###### VedioLink 
+###### VideoLink 
 https://youtu.be/XKyXdch1t18
 
 
@@ -19,10 +19,12 @@ https://youtu.be/XKyXdch1t18
 
 ### Lab 03 - Dark Detecting LED
 
-The circuit we built acts opposite to the way it should. The LED is on when light is light and off when it is dark. We connected the same as the circuit diagram shows, and did not know why this happpens.
+Sensors and transistors can be used to detecte the dynamic changes in the atmosphere in order to vary the input in the circuit. This circuit detects the amount of light in the room and react to it.
+
+The circuit we built acted opposite to the way it should. The LED was on when light was light and off when it was dark. We connected the same as the circuit diagram shows, and did not know why this happpened.
 
 ![Image04](Week03Lab03.1.JPG)
 ![Image05](Week03Lab03.2.JPG)
 
-###### VedioLink 
+###### VideoLink 
 https://youtu.be/ncrLFZBRUR4
