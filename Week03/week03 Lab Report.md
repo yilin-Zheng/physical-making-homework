@@ -23,6 +23,8 @@ Sensors and transistors can be used to detecte the dynamic changes in the atmosp
 
 The circuit we built acted opposite to the way it should. The LED was on when light was light and off when it was dark. We connected the same as the circuit diagram shows, and did not know why this happpened.
 
+    From nesxt lesson: Reversed result may cause by a reversed oriented element or a wrong relative positioning.
+
 ![Image04](Week03Lab03.1.JPG)
 ![Image05](Week03Lab03.2.JPG)
 
