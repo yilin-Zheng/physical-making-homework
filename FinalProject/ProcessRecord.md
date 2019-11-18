@@ -22,6 +22,10 @@ Start with a smaller version to test.
 
 ![Fig03](Sketch02.jpg)
 
+(Week07)
+
+- Search for lighting on acrylic panel
+
 ### Materials & Components
 
 (Week06)
@@ -40,6 +44,10 @@ Start with a smaller version to test.
 
 - Press/tactile Button
 
+(Week07)
+
+- 3D print connecting compoents with screws
+
 ## Ways to Interact
 
 (Week06) 
@@ -49,3 +57,11 @@ Start with a smaller version to test.
 - noise––light brightness
 
 - button––sound+rotation
+
+
+### Reference
+
+- Stephen Knapp, Light Paintings
+
+- Karakuri: How to Make Mechanical Papers That Move.
+
