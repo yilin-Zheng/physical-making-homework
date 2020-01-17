@@ -6,60 +6,84 @@ The initial concept for the final project is to create a atmospheric divice that
 
 (Week06) After discussion with tutor, I decided to make the device more playful and encouraging people to engage as well as keeping the "killing part" of making the output effect "big" and atmospheric.
 
-## Appearance of Device
+## Form
 
-### Form
-(Week05)
+#### Initial Idea
+
 ![Fig01](Sketch01.jpg)
 *Design Process*
 
-(Week06) Inspired by Stephen Knapp's art work [Fig], I am intending to make such an art work of light and colour that helps defining the character of space. Ideally, the component can be mounted onto a tall self-standing board that acts as a "fake wall" in the room. This idea has to have supporing tools, materials and spaces.
+#### Precedents
+
+Inspired by Stephen Knapp's art work [Fig], I am intending to make such an art work of light and colour that helps defining the character of space. Ideally, the component can be mounted onto a tall self-standing board that acts as a "fake wall" in the room. This idea has to have supporing tools, materials and spaces.
 
 ![Fig02](Precedent01.jpg)
 *Fig01: Stephen Knapp, Light Paintings*
 
-Start with a smaller version to test.
+lighting on acrylic panel
 
-![Fig03](Sketch02.jpg)
+![Fig04](Precedent03.jpg)
+![Fig05](Precedent02.jpg)
 
-(Week07)
+##### Start with a smaller version to test
 
-- Search for lighting on acrylic panel
+![Fig06](Sketch02.jpg)
 
-### Materials & Components
+1st stage outcome---not neat enough to me
 
-(Week06)
+used 3D printed components
 
-- SWITCH!!!
+![Fig07](IMG_7592.jpg)
 
-- Relay light bulb
+The box-like version tends out to be to complex in structures, which keeps away from my imagination of a 'simple but powerful' design.
 
-- Coloured acrylic panel/sheet
+
+#### adaptation of plan
+![Fig08](Sketch03.png)
+
+![Fig09](IMG_8686.jpg)
+
+Try to keep make the design look like a device on a flat surface and minimise room for 'functions'. However, there have to be a room for all electrical parts, the thickness of base is inevitable.
+
+![Fig10](IMG_8682.jpg)
+
+Station for all sensors, which can be placed away from the main sturctures to really detect movements in a room.(which proved to be problematic in terms of seneor properties.)
+
+
+## Materials & Components
+
+
+- SWITCH (needed as a proper usable device)
+
+- Relay light bulb (replaced by DMX dimmer box)
+
+- Coloured (transparent) acrylic panel/sheet
 
 - Speaker(optional)
 
-- Servo for rotation
+- Servos for rotation
 
 - Sensors––sound, blow
 
-- Press/tactile Button
+- Press/tactile Button (to ingage)
 
-(Week07)
-
-- 3D print connecting compoents with screws
+- 3D print connecting compoents with screws(did not use)
 
 ## Ways to Interact
-
-(Week06) 
-
+ 
 - blow––light switch
 
 - noise––light brightness
 
 - button––sound+rotation
 
+##### Final Decisions
 
-### Reference
+- Sound––Brightness of light bulb
+
+- Ditance sensors––ratation of Acrylic
+
+## Reference
 
 - Stephen Knapp, Light Paintings
 
