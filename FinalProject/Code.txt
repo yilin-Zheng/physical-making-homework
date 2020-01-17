@@ -1,0 +1,179 @@
+
+//GND → Supply Ground
+//VCC → Power supply voltage between 3.5 and 5.5 Volts
+//Gate → Pin 13
+//Envelope → A0
+//DMX: A4
+//distance sensor digital 4~7
+//servo digital8~12
+
+#include <DmxSimple.h>
+#include<Servo.h>
+
+Servo myServo1;
+Servo myServo2;
+Servo myServo3;
+Servo myServo4;
+Servo myServo5;
+
+
+int pos1;
+int pos2;
+int pos3;
+int pos4;
+int pos5;
+float Pos1 = 15;
+float Pos2 = 15;
+float Pos3 = 15;
+float Pos4 = 15;
+float Pos5 = 15;
+int a = 1;
+int b = 1;
+int c = 1;
+int d = 1;
+int e = 1;
+int i = 1;
+
+long duration1;
+long duration2;
+long duration3;
+long d1;
+long d2;
+long d3;
+int v = 2;
+int u = 1;
+int x = 2;
+int y = 1;
+
+#define soundInput A0
+int soundFactor = 0;
+int lightOutput = 0;
+int soundPin_val;
+int sound;
+
+const int trigPin = 4;
+const int echoPin = 5;
+const int trigPin2 = 6;
+const int echoPin2 = 7;
+long brightness;
+
+
+void soundISR(){
+  //soundPin_val = digitalRead(13);  
+  sound = (analogRead(A0)); 
+}
+
+
+void setup() {
+
+  pinMode(2, OUTPUT);
+  pinMode(2, HIGH);
+  pinMode(trigPin, OUTPUT);
+  pinMode(trigPin2, OUTPUT);
+  pinMode(echoPin, INPUT);
+  pinMode(echoPin2, INPUT);
+ 
+  DmxSimple.usePin(4);
+//  DmxSimple.maxChannel(4);
+
+  //Serial.begin(9600);
+  //attachInterrupt(0, soundISR, CHANGE);
+   myServo1.attach(9);
+   myServo2.attach(10);
+   myServo3.attach(11);
+   myServo4.attach(12);
+   myServo5.attach(8);
+}
+
+void loop(){
+
+//sound_brightness();
+distances();
+
+Pos1 += a*0.8;
+Pos2 += b*v*0.4;
+Pos3 += c*u*0.6;
+Pos4 += d*x*0.3;
+Pos5 += e*y*0.8;
+pos1 = floor(Pos1);
+pos2 = floor(Pos2);
+pos3 = floor(Pos3);
+pos4 = floor(Pos4);
+pos5 = floor(Pos5);
+
+myServo1.write(pos1);
+myServo2.write(pos2);
+myServo3.write(pos3);
+myServo4.write(pos4);
+myServo5.write(pos5);
+
+if (pos1>=175){a*=-1;}
+if (pos1<=5){a*=-1;}
+if (pos2>=175){b*=-1;}
+if (pos2<=5){b*=-1;}
+if (pos3>=175){c*=-1;}
+if (pos3<=5){c*=-1;}
+if (pos4>=175){d*=-1;}
+if (pos4<=5){d*=-1;}
+if (pos5>=175){e*=-1;}
+if (pos5<=5){e*=-1;}
+
+if (d3<=5){v = 6;}
+if (d3>5){v = 2;}
+if (d3<=10){u = 5;}
+if (d3>10){u = 2;}
+if (d2<=5){x = 4;}
+if (d2>5){x = 1;}
+if (d2<=10){y = 4;}
+if (d2>10){y = 2;}
+
+
+int sound = analogRead(A0);
+//int brightness=255;
+brightness -= sound/8*i;
+int brightnessFloor = floor(brightness);
+if (brightness<30){i = -1;}
+if (brightness>150){i = 1;}
+if (sound >300){  delay(1000);}
+
+Serial.println (pos1);
+Serial.println (pos2);
+Serial.println (pos3);
+Serial.println (pos4);
+Serial.println (pos5);
+Serial.print ("sound ");
+Serial.println (sound);
+
+DmxSimple.write(1, brightnessFloor);
+Serial.print ("brigntness           ");
+Serial.println (brightnessFloor);
+
+}
+
+void distances(){
+
+digitalWrite(trigPin2, LOW);
+delayMicroseconds(2);
+digitalWrite(trigPin2, HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPin2, LOW);
+duration2 = pulseIn(echoPin2, HIGH);
+d2= duration2*0.034/2;
+
+Serial.print("Distances: ");
+Serial.print("d2: ");
+Serial.println(d2);
+
+
+digitalWrite(trigPin, LOW);
+delayMicroseconds(2);
+digitalWrite(trigPin, HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPin, LOW);
+duration3 = pulseIn(echoPin, HIGH);
+d3= duration3*0.034/2;
+
+Serial.print("Distances: ");
+Serial.print("d3: ");
+Serial.println(d3);
+}
